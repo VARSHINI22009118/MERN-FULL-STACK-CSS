@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Travel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: white;
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: block;
+            text-align: right;
+        }
+
+        nav .logo {
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+            color: #1B9AAA;
+        }
+
+        nav a {
+            color: #1B9AAA;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        header {
+            display: block;
+            text-align: left;
+            padding: 50px 30px;
+            background-color: #f2f2f2;
+            position: relative;
+            height: 400px;
+        }
+
+        .header-content {
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+            z-index: 2;
+            position: relative;
+        }
+
+        .header-content h1 {
+            font-size: 36px;
+            margin-top: 0;
+            color: #1B9AAA;
+        }
+
+        .header-content p {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #5a5a5a;
+        }
+
+        .header-content .explore {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1B9AAA;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .header-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 55%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .search-box {
+            margin-top: 20px;
+        }
+
+        .search-box select {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .search-box .explore {
+            width: 15%;
+            padding: 10px;
+            margin-left: 10px;
+            background-color: #1B9AAA;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #destinations {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .destination {
+            display: inline-block;
+            width: 30%; /* Adjust width to allow three columns */
+            margin: 20px;
+            vertical-align: top; /* Align destinations in rows */
+            text-align: left;
+        }
+
+        .destination img {
+            width: 100%;
+            height: 280px;
+            border-radius: 5px;
+        }
+
+        .destination h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #1B9AAA;
+        }
+
+        .destination p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .destination .read-more {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #1B9AAA;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        #contact form {
+            display: inline-block;
+            width: 300px;
+            text-align: left;
+        }
+
+        #contact label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        #contact input,
+        #contact select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #1B9AAA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">explorer</div>
+        <a href="#">Hotels</a>
+        <a href="#">Bike Rentals</a>
+        <a href="#">Restaurants</a>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>Your Journey Awaits</h1>
+            <h1>Explore the Wonders of</h1>
+            <h1>The Dravidian Heartland</h1>
+            <p>Welcome to Explorer</p>
+            <div class="search-box">
+                <select>
+                    <option value="">Choose</option>
+                    <option value="destination1">Destination 1</option>
+                    <option value="destination2">Destination 2</option>
+                </select>
+                <a href="#" class="explore">Explore</a>
+            </div>
+        </div>
+        <div class="header-image">
+            <img src="./images/camping-sunrise.jpg" alt="Adventure Image">
+        </div>
+    </header>
+
+    <section id="destinations">
+        <div class="destination">
+            <img src="./images/alleppey.jpeg" alt="BACKWATER SERENITY">
+            <h3>Sail Into Tranquility: Backwater Adventures in Alleppey!</h3>
+            <p>Ready to drift into a world of calm and wonder? Our backwater experience in Alleppey invites you to sail through a labyrinth of tranquil waterways, where you'll glide past lush paddy fields and picturesque villages. Whether you're a nature lover or a first-time explorer, this journey offers the perfect blend of relaxation and scenic beauty. Step aboard, unwind, and let the gentle rhythm of the water carry you through the serene landscapes of Kerala's enchanting backwaters!</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="destination">
+            <img src="./images/coorg.jpeg" alt="Heaven Above Sky">
+            <h3>Experience the Wild: Camping Under Coorg's Starlit Skies!</h3>
+            <p>Ready to escape into a paradise of misty hills and verdant landscapes? Our Coorg experience takes you on a journey through the heart of this heavenly destination, where you'll wander through aromatic coffee plantations and lush forests. Whether you're a nature enthusiast or seeking a peaceful retreat, Coorg offers the perfect blend of adventure and serenity. Breathe in the fresh mountain air, explore hidden waterfalls, and let the natural beauty of Coorg rejuvenate your soul in this slice of heaven on earth!</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="destination">
+            <img src="./images/kanyakumari.webp" alt="Cape Comorin">
+            <h3>Touch the Horizon: Unveil Mysteries at Vivekananda Rock Memorial!</h3>
+            <p>Prepare to uncover the enchanting allure of Vivekananda Rock Memorial, where the ocean’s whispers meet the dawn’s first light in a serene symphony. As the sun rises, casting golden and crimson hues across the sea, the sacred site reveals its breathtaking beauty. Ideal for seekers of spiritual peace and nature lovers alike, this journey offers a deep connection to the universe's mysteries. Stand at the ocean’s edge, feel the gentle breeze, and let the sunrise awaken your soul to the timeless wonders of this sacred location.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="destination">
+            <img src="./images/KODAIKANAL.jpg" alt="Princess of Hill Station">
+            <h3>Embrace the Heights: Soar Over Kodaikanal’s Breathtaking Vistas!</h3>
+            <p>Embark on a journey to Kodaikanal, where the mist-kissed mountains and emerald valleys create a realm of pure enchantment. As dawn breaks over this serene hill station, the landscape transforms into a dreamy canvas of soft pastels and shimmering dew. Whether you’re a romantic at heart or a seeker of solitude, Kodaikanal offers a sanctuary where time slows down and nature’s beauty takes center stage. Wander through fragrant pine forests, discover hidden waterfalls, and let the cool mountain breeze whisper secrets of the ages.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="destination">
+            <img src="./images/pondichery.jpg" alt="French Riviera of the East">
+            <h3>Sun, Sand, and Serenity: Unwind on Pondicherry's Peaceful Shores!</h3>
+            <p>Step into a world where time seems to pause at Pondicherry's peaceful shores, where the gentle waves kiss the golden sands under the embrace of the endless sky. As the sun dips into the horizon, the coastline is bathed in a warm, golden glow, creating a scene straight out of a dream. Whether you’re seeking a serene escape or a soulful connection with nature, Pondicherry's tranquil beaches offer the perfect retreat. Stroll along the shoreline, feel the soft sand beneath your feet, and let the rhythmic lull of the ocean carry you into a state of pure bliss</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="destination">
+            <img src="./images/kochi1.jpeg" alt="Gems of the Western Ghats">
+            <h3>Dive Into Serenity: Let Kochi's Waterfalls Refresh Your Spirit!</h3>
+            <p>Immerse yourself in the spellbinding allure of Kochi's waterfalls, where nature’s majesty cascades down rugged cliffs in a symphony of sparkling droplets and soothing sounds. As the water tumbles gracefully into crystal-clear pools, the surrounding lush greenery creates a haven of tranquility and wonder. Whether you're a nature enthusiast or simply seeking a serene escape, Kochi’s enchanting waterfalls offer a mesmerizing retreat. Feel the refreshing mist on your face, listen to the melodic rush of the falls, and let the vibrant landscape captivate your senses. </p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Our Sales Team will reach out to you ASAP!</p>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="home-town">Your Home Town</label>
+            <select id="home-town" name="home-town">
+                <option value="">Choose</option>
+                <option value="town1">Town 1</option>
+                <option value="town2">Town 2</option>
+            </select>
+            
+            <label for="destination">Where would you like to go?</label>
+            <select id="destination" name="destination">
+                <option value="">Choose</option>
+                <option value="place1">Place 1</option>
+                <option value="place2">Place 2</option>
+            </select>
+            
+            <label for="contact-number">Contact Number</label>
+            <input type="text" id="contact-number" name="contact-number">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
